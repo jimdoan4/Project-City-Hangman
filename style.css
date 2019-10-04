@@ -1,0 +1,14 @@
+body {
+    background: linear-gradient(rgba(15, 15, 15, 0.3), rgba(34, 33, 33, 0.3)),
+        url('https://i.pinimg.com/originals/27/8c/80/278c8023527cf8a4cc12e033e20b1433.gif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 718px;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-weight: 700px;
+}
