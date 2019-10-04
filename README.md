@@ -13,7 +13,7 @@
 The goal of this project was to create an easy game that allows Hangman is a paper and pencil guessing game. One player thinks of a word, phrase or sentence and the other(s) tries to guess it by suggesting letters, within a certain number of guesses. If the user guess all the correct letters, then user will get 1 point and increases by 1 for every match words. User will only get 6 tries to match the word, if not, user loses.
 
 ### Home Page Mockup
-## [Link]() to the Deployed App
+## [Link](https://cityhangman.netlify.com) to the Deployed App
 
 ## [Link](https://trello.com/b/IwGhvwrh/hangman-project-1) to the Trello Board
 
