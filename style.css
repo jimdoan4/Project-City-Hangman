@@ -12,3 +12,142 @@ body {
     color: black;
     font-weight: 700px;
 }
+
+/* Title Header */
+#title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px;
+    margin: 0;
+    color: black;
+    font-weight: 800;
+}
+
+#title {
+    display: inline;
+}
+
+
+.clicker {
+    width: 640px;
+    height: 63px;
+    padding: 5px;
+    color: #3B5C88;
+    background-color: #d7dce2;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 10px 18px #888888;
+    margin-top: 160px;
+}
+
+.clicker:hover {
+    background-color: #b275ba;
+}
+
+/* Subtitle  */
+.subtitle {
+    color: black;
+    font-weight: 700;
+    background-color: #d7dce2;
+    width: 400px;
+    border-radius: 5px;
+    height: 47px;
+    margin-right: 340px;
+    padding-top: 5px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.subtitle:hover {
+    background-color: #b275ba;
+}
+
+h2 {
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 55px 0 0 0;
+    letter-spacing: 1.5px;
+}
+
+h4 {
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+    color: #3B5C88;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+/* Box around alphabet letters */
+.letterArea {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    color: black;
+}
+
+.letterBox {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-bottom: 5px solid white;
+    margin: 0 20px 0 10px;
+}
+
+.letterBox.correctLetter {
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 250;
+    font-size: 35px;
+    padding-bottom: 3px;
+}
+
+.pickALetter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alphabet {
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    list-style-type: none;
+    display: flex;
+    padding: 12px 12px 12px 12px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.alphabetLetter {
+    margin: 4px;
+}
+
+
+.separationBar {
+    width: 60%;
+    height: 1px;
+    background-color: black;
+    margin-top: 100px;
+}
+
+.letterBox p {
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 43px;
+    margin: 0 auto;
+    padding-bottom: 3px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
