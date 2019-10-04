@@ -207,3 +207,69 @@ let setUpGame = () => {
         })
     });
 }
+
+// triggers a game to begin / allows user to insert letters
+setUpGame();
+
+// new game button -->
+// clears old divs
+// generates new word from random word array
+// inserts new divs for newrandomword.length 
+// adds to total wins and total losses
+
+// when the play again button is clicked, triggers new game
+$(".playAgain").click(function (event) {
+
+    // changes play again button opacity
+    $(".playAgain").css("opacity", "1");
+
+    // allow letters pop up again
+    $(".alphabetLetter").prop('disabled', false);
+
+    head.setAttribute("style", "opacity: 0");
+
+    body.setAttribute("style", "opacity: 0");
+
+    leftArm.setAttribute("style", "opacity: 0");
+
+    rightArm.setAttribute("style", "opacity: 0");
+
+    leftLeg.setAttribute("style", "opacity: 0");
+
+    rightLeg.setAttribute("style", "opacity: 0");
+
+
+    // changes title of hangman
+    $("#title").html("Find Your City, Find Your Match");
+
+    // empty out the previously created letter boxes
+    $(".letterArea").empty(letterBox);
+
+    // created a new variable and set it to a randomly generated word
+    randomArrayWord = generateRandomWord();
+    // console.log(randomArrayWord);
+
+    // get the length of the randomly generated word
+    randomArrayWordLength = randomArrayWord.length;
+
+    // create a series of boxes that corresponds to that length
+    var letterBox = "";
+    for (let i = 0; randomArrayWordLength > i; i++) {
+        letterBox = `<div id='box${i}' class='letterBox'><div class='underlinedLetterArea'></div></div>`;
+        $(".letterArea").append(letterBox);
+    }
+
+    // changes letters back to white
+    $(".alphabetLetter").css("color", "black");
+
+    // resets arrays --> 
+
+    // array for the amount of wrong guesses
+    wrongGuesses = [];
+
+    // array for the amount of right guesses
+    rightGuesses = [];
+
+    // array for the amount of wrong guesses the user starts with
+    totalGuesses = 6;
+});

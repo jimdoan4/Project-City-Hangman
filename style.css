@@ -151,3 +151,85 @@ h4 {
     font-weight: 500;
     text-transform: uppercase;
 }
+
+/* SVG For Hangman */
+.svgContainer {
+    width: 16%;
+    height: 16%;
+    margin-top: 50px;
+}
+
+.cls-1,
+.cls-2,
+.cls-3 {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 17px;
+}
+
+.cls-1,
+.cls-3 {
+    stroke-linecap: round;
+}
+
+.cls-1 {
+    stroke-linejoin: round;
+}
+
+.cls-2,
+.cls-3 {
+    stroke-miterlimit: 10;
+}
+
+#head {
+    opacity: 0;
+}
+
+#left-arm {
+    opacity: 0;
+}
+
+#right-arm {
+    opacity: 0;
+}
+
+#body {
+    opacity: 0;
+}
+
+#left_leg {
+    opacity: 0;
+}
+
+#right_leg {
+    opacity: 0;
+}
+
+/* Scoreboard */
+.bottomScoreBoard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+h3.scoreBoard {
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin: 70px 30px 0 30px;
+    letter-spacing: 3px;
+}
+
+.winLoseTotal {
+    display: inline;
+    font-weight: 500;
+}
+
+.losses {
+    display: inline;
+}
