@@ -98,7 +98,7 @@ let setUpGame = () => {
                         // return rightGuesses;
 
                         // checks to see if the array of correctly guessed letters matches the length of the randomly generated word
-                        if (rightGuesses.length == randomArrayWordLength) {
+                        if (rightGuesses.length == randomWordLength) {
 
 
                             // changes opacity to of play again button
@@ -250,11 +250,11 @@ $(".playAgain").click(function (event) {
     // console.log(randomArrayWord);
 
     // get the length of the randomly generated word
-    randomArrayWordLength = randomArrayWord.length;
+    randomWordLength = randomArrayWord.length;
 
     // create a series of boxes that corresponds to that length
     var letterBox = "";
-    for (let i = 0; randomArrayWordLength > i; i++) {
+    for (let i = 0; randomWordLength > i; i++) {
         letterBox = `<div id='box${i}' class='letterBox'><div class='underlinedLetterArea'></div></div>`;
         $(".letterArea").append(letterBox);
     }
